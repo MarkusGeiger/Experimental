@@ -1,11 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Experimental.Logging.BuiltIn
+namespace Experimental.ApiRouting
 {
   public class Startup
   {
@@ -23,15 +29,17 @@ namespace Experimental.Logging.BuiltIn
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
       if (env.IsDevelopment())
       {
-        logger.LogWarning("In Development environment");
         app.UseDeveloperExceptionPage();
       }
 
-      app.UseHttpsRedirection();
+      //app.UseHttpsRedirection();
+
+      app.UseDefaultFiles();
+      app.UseStaticFiles();
 
       app.UseRouting();
 
