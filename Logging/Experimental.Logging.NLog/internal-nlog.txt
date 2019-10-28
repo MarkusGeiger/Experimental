@@ -1,0 +1,22 @@
+2019-10-28 12:36:56.9838 Info Message Template Auto Format enabled
+2019-10-28 12:36:57.0224 Info Loading assembly: NLog.Web.AspNetCore
+2019-10-28 12:36:57.1214 Info Adding target FileTarget(Name=allfile)
+2019-10-28 12:36:57.1384 Info Adding target FileTarget(Name=ownFile-web)
+2019-10-28 12:36:57.1977 Info Found 45 configuration items
+2019-10-28 12:43:01.7140 Info Message Template Auto Format enabled
+2019-10-28 12:43:01.7281 Info Loading assembly: NLog.Web.AspNetCore
+2019-10-28 12:43:01.7830 Info Adding target FileTarget(Name=allfile)
+2019-10-28 12:43:01.7830 Info Adding target FileTarget(Name=ownFile-web)
+2019-10-28 12:43:01.8257 Info Found 45 configuration items
+2019-10-28 12:48:29.8812 Info Message Template Auto Format enabled
+2019-10-28 12:48:29.8975 Info Loading assembly: NLog.Web.AspNetCore
+2019-10-28 12:48:29.9533 Info Adding target FileTarget(Name=allfile)
+2019-10-28 12:48:29.9639 Info Adding target FileTarget(Name=ownFile-web)
+2019-10-28 12:48:29.9735 Info Adding target ColoredConsoleTarget(Name=coloredConsole)
+2019-10-28 12:48:30.0072 Info Found 60 configuration items
+2019-10-28 12:49:20.9947 Info Message Template Auto Format enabled
+2019-10-28 12:49:21.0117 Info Loading assembly: NLog.Web.AspNetCore
+2019-10-28 12:49:21.0791 Info Adding target FileTarget(Name=allfile)
+2019-10-28 12:49:21.0882 Info Adding target FileTarget(Name=ownFile-web)
+2019-10-28 12:49:21.0975 Info Adding target ColoredConsoleTarget(Name=coloredConsole)
+2019-10-28 12:49:21.1327 Info Found 60 configuration items
