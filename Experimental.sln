@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experimental.Logging.NLog",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experimental.Logging.BuiltIn", "Logging\Experimental.Logging.BuiltIn\Experimental.Logging.BuiltIn.csproj", "{54473145-9CFD-4A90-A2FF-CBD43F8B110D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eperimental.Static", "Eperimental.Static\Eperimental.Static.csproj", "{388AF979-D73B-4A3A-AA89-98316122760C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experimental.Static", "Eperimental.Static\Experimental.Static.csproj", "{388AF979-D73B-4A3A-AA89-98316122760C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimental.ApiRouting", "Experimental.ApiRouting\Experimental.ApiRouting.csproj", "{3C7974EB-452D-42C5-A001-1FB38011DA6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experimental.ApiRouting", "Experimental.ApiRouting\Experimental.ApiRouting.csproj", "{3C7974EB-452D-42C5-A001-1FB38011DA6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experimental.MongoDBWebAPI", "Experimental.MongoDBWebAPI\Experimental.MongoDBWebAPI.csproj", "{3BB5B324-B1B8-4178-B072-7D6AC4785921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{3C7974EB-452D-42C5-A001-1FB38011DA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C7974EB-452D-42C5-A001-1FB38011DA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C7974EB-452D-42C5-A001-1FB38011DA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB5B324-B1B8-4178-B072-7D6AC4785921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB5B324-B1B8-4178-B072-7D6AC4785921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB5B324-B1B8-4178-B072-7D6AC4785921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB5B324-B1B8-4178-B072-7D6AC4785921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
