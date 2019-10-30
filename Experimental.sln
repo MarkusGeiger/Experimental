@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experimental.ApiRouting", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experimental.MongoDBWebAPI", "Experimental.MongoDBWebAPI\Experimental.MongoDBWebAPI.csproj", "{3BB5B324-B1B8-4178-B072-7D6AC4785921}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experimental.TodoApi", "Experimental.TodoApi\Experimental.TodoApi.csproj", "{057E7DC6-EF8F-4346-8F48-7113C128A3E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Experimental.TodoApiMongoDB", "Experimental.TodoApiMongoDB\Experimental.TodoApiMongoDB.csproj", "{49502C7F-52E7-4C23-9EE1-66E2377AC2A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,14 @@ Global
 		{3BB5B324-B1B8-4178-B072-7D6AC4785921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BB5B324-B1B8-4178-B072-7D6AC4785921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BB5B324-B1B8-4178-B072-7D6AC4785921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057E7DC6-EF8F-4346-8F48-7113C128A3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057E7DC6-EF8F-4346-8F48-7113C128A3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057E7DC6-EF8F-4346-8F48-7113C128A3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057E7DC6-EF8F-4346-8F48-7113C128A3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49502C7F-52E7-4C23-9EE1-66E2377AC2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49502C7F-52E7-4C23-9EE1-66E2377AC2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49502C7F-52E7-4C23-9EE1-66E2377AC2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49502C7F-52E7-4C23-9EE1-66E2377AC2A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
