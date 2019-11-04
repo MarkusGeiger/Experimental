@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e2013c26-1359-4123-9b11-2942e103923b</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telegram.Bot" Version="15.0.0" />
+    <PackageReference Include="Telegram.Bot.Framework" Version="2.0.0-alpha5" />
+  </ItemGroup>
+
+
+</Project>
