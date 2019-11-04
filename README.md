@@ -14,5 +14,6 @@ Current targets:
 ### Telegram Bots
 ### Metrics
 #### AppMetrics
+### IdentityServer4
 ### Frontend
 #### Angular
