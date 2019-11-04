@@ -35,23 +35,26 @@ Little extensions:
 
 #### [Experimental.TodoApi](Experimental.TodoApi)
 ##### Tutorial implementation of the ASP .NET Core TodoApp
-[Tutorial: Create a web API with ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.0&tabs=visual-studio)
-[Tutorial: Call an ASP.NET Core web API with JavaScript](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-3.0)
+* [Tutorial: Create a web API with ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.0&tabs=visual-studio)
+* [Tutorial: Call an ASP.NET Core web API with JavaScript](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-3.0)
 
 #### [Experimental.TodoApiMongoDB](Experimental.TodoApiMongoDB)
 ##### Tutorial implementation of the ASP .NET Core TodoApp and MongoDB
 Replace the SQL InMemory Database with MongoDB following the MongoDB tutorial
 
 ###### Todo Tutorials
-[Tutorial: Create a web API with ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.0&tabs=visual-studio)
-[Tutorial: Call an ASP.NET Core web API with JavaScript](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-3.0)
+* [Tutorial: Create a web API with ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.0&tabs=visual-studio)
+* [Tutorial: Call an ASP.NET Core web API with JavaScript](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-3.0)
 
 ###### MongoDB Tutorial
-[Create a WebAPI with ASP .Net Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-3.0&tabs=visual-studio)
-[MongoDB download page](https://www.mongodb.com/download-center/community)
+* [Create a WebAPI with ASP .Net Core and MongoDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-3.0&tabs=visual-studio)
+* [MongoDB download page](https://www.mongodb.com/download-center/community)
 
 ## Telegram Bots
 #### [Experimental.EchoBot](Experimental.EchoBot)
+* [Global exception handling in ASP.NET Core](http://www.herlitz.nu/2019/05/05/global-exception-handling-asp.net-core/)
+* [.NET Client for Telegram Bot API](https://github.com/TelegramBots/Telegram.Bot)
+* [Safe storage of app secrets in development in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.0&tabs=windows)
 
 ## Metrics
 #### AppMetrics
