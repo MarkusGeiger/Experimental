@@ -11,10 +11,12 @@ namespace Experimental.ApiRouting.Controllers
   public class GhibliMovieController : ControllerBase
   {
     private readonly ILogger<GhibliMovieController> _logger;
+    private readonly MovieModel _model;
 
-    public GhibliMovieController(ILogger<GhibliMovieController> logger)
+    public GhibliMovieController(ILogger<GhibliMovieController> logger, MovieModel movieModel)
     {
       _logger = logger;
+      _model = movieModel;
     }
 
     [HttpGet]
@@ -22,7 +24,7 @@ namespace Experimental.ApiRouting.Controllers
     {
       _logger.LogWarning("Get request received!");
 
-      return await MovieModel.Instance().GetMoviesFromExternalSource();
+      return await _model.GetMoviesFromExternalSource();
     }
   }
 }
