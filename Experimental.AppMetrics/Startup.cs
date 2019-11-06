@@ -4,6 +4,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using App.Metrics;
+using App.Metrics.Scheduling;
+using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 namespace Experimental.AppMetrics
 {
@@ -16,10 +21,26 @@ namespace Experimental.AppMetrics
 
     public IConfiguration Configuration { get; }
 
+    private static IMetricsRoot _metrics;
+
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddSingleton<Metrics>();
+      // TODO: Workaround for missing async IO feature in App.Metrics
+      services.Configure<KestrelServerOptions>(options =>
+      {
+        options.AllowSynchronousIO = true;
+      });
+
+      _metrics = new MetricsBuilder()
+        .Report.ToConsole()
+        .Build();
+      
+      services.AddMetrics(_metrics);
+      services.AddMetricsEndpoints();
+      services.AddMetricsTrackingMiddleware();
+
+      services.AddSingleton(new Metrics(_metrics));
 
       services.AddControllers();
     }
@@ -31,6 +52,9 @@ namespace Experimental.AppMetrics
       {
         app.UseDeveloperExceptionPage();
       }
+
+      app.UseMetricsAllMiddleware();
+      app.UseMetricsAllEndpoints();
 
       app.UseHttpsRedirection();
 

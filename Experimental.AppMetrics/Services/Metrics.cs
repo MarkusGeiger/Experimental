@@ -32,6 +32,14 @@ namespace Experimental.AppMetrics.Services
       scheduler.Start();
     }
 
+    public Metrics(IMetricsRoot metrics)
+    {
+      _metrics = metrics;
+      _counter = new CounterOptions { Name = "my_counter" };
+      _metrics.Measure.Counter.Increment(_counter);
+      _metrics.Measure.Counter.Decrement(_counter);
+    }
+
     public void IncrementCounter()
     {
       _metrics.Measure.Counter.Increment(_counter);
@@ -46,7 +54,8 @@ namespace Experimental.AppMetrics.Services
         await _metrics.DefaultOutputEnvFormatter.WriteAsync(stream, _metrics.EnvironmentInfo);
 
         var result = Encoding.UTF8.GetString(stream.ToArray());
-        _logger.LogInformation(result);
+        Console.WriteLine(result);
+        //_logger.LogInformation(result);
       }
     }
   }
